@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>˖⟡⋆౨ Home ৎ˚⟡˖</h1>
+    </header>
+
+    <nav>
+        <label for = "drop" class = "toggle">Menu</label>
+        <input type = "checkbox" id= "drop">
+        <ul class = "menu">
+            <!-- index.html -->
+            <li><a href="index.html">Home</a></li>
+
+            <!-- aboutme.html -->
+            <li id="aboutme">
+                <a title="click to close" class="less" href="#">X</a>
+                <a title="click to open" class="more" href="#aboutme">Z</a>
+                <a href="aboutme.html">About Me</a>
+                <ul>
+                    <!-- aboutme dropdown child -->
+                    <li><a href="aboutme.html#background">Background</a></li>
+                    <li><a href="aboutme.html#aspirations">Aspirations</a></li>
+                    <li><a href="aboutme.html#family">Family</a></li>
+                    <li><a href="aboutme.html#friends">Friends</a></li>
+                </ul>
+            </li>
+
+            <!-- education.html -->
+            <li id="education">
+                <a title="click to close" class="less" href="#">X</a>
+                <a title="click to open" class="more" href="#education">Z</a>
+                <a href="education.html">Education</a>
+                <ul>
+                    <li><a href = "education.html#primary">Primary School</a></li>
+                    <li><a href = "education.html#secondary">Secondary School</a></li>
+                    <li><a href = "education.html#ite">ITE</a></li>
+                    <li><a href = "education.html#polytechnic">Polytechnic</a></li>
+                </ul>
+            </li>
+
+            <!-- hobbies.html -->
+            <li id="hobbies">
+                <a title="click to close" class="less" href="#">X</a>
+                <a title="click to open" class="more" href="#hobbies">Z</a>
+                <a href="hobbies.html">Hobbies</a>
+                <ul>
+                    <li><a href = "hobbies.html#kpop">Kpop</a></li>
+                    <li><a href = "hobbies.html#gaming">Games</a></li>
+                    <li><a href = "hobbies.html#pets">Pets</a></li>
+                    <li><a href = "hobbies.html#random">Others</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class = "flex-container" id="index-content">
+        <img class="index-img" src="images/kuromi.jpg" alt="kuromi">
+        <div class="text-align-center">
+            <h3>Welcome to</h3>
+            <h1 id="letter-spacing">Jaslin's Boring</h1>
+            <h3><span id="line-through">life</span> portfolio</h3>
+        </div>
+        <img class="index-img" src="images/cinnamoroll.jpg" alt="cinnamoroll">
+    </div>
+</body>
+
+</html>

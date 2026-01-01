@@ -1,0 +1,795 @@
+html {
+    background-image: url("../images/winbg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #2E8BC0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    text-align: center;
+    color: #475369;
+}
+
+h2 {
+    color: #216186;
+}
+
+body {
+    margin: auto;
+}
+
+/* nav */
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+nav {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    position: relative;
+    list-style: none;
+}
+
+nav li a {
+    background: #8dc5e6;
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background: #6498b6;
+}
+
+nav li a.more,
+nav li a.less {
+    display: none;
+    font-family: icon;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #8dc5e6;
+    padding: 0;
+    width: 25%;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .5);
+    z-index: 500;
+    font-size: 30px;
+}
+
+nav li a.more:hover,
+nav li a.less:hover {
+    background: #6498b6;
+}
+
+.touch nav li a.more,
+.touch nav li a.less {
+    display: block;
+}
+
+nav li ul {
+    padding: 0;
+}
+
+nav li ul li {
+    height: 0px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+nav li ul a {
+    background: #8dc5e6;
+    line-height: 21px;
+    border: none;
+}
+
+nav li ul a:hover {
+    background: #6498b6;
+}
+
+nav li:target ul li {
+    height: 40px;
+}
+
+nav li:target ul li:first-child {
+    border-top: none;
+}
+
+nav li:target .less {
+    z-index: 1000;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* index.html */
+#index-content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 150px;
+    margin: 150px auto;
+    height: 50vh;
+    width: 100%;
+}
+
+/* aboutme.html */
+.container {
+    margin-top: 70px;
+    max-width: 100%;
+}
+
+#about-col {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 80%;
+}
+
+#introduction {
+    margin-top: -20px;
+}
+
+.introduction-text {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    color: #1d516e;
+}
+
+#about {
+    margin: auto;
+}
+
+#about-img {
+    margin-top: 100px;
+    margin-bottom: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.img-border {
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/* aspirations */
+.grid-container {
+    display: grid;
+    justify-content: start;
+}
+
+#grid-items {
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+}
+
+.grid-items-content {
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+
+.grid-items-img {
+    height: auto;
+    width: 200px;
+}
+
+/* family */
+.family-img {
+    height: auto;
+    width: 300px;
+    margin: 0 100px;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.family-centered {
+    align-items: center;
+}
+
+#flex-start {
+    align-items: flex-start;
+}
+
+.family-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+}
+
+.indiv-img {
+    height: 200px;
+    width: 200px;
+}
+
+.friend-container {
+    position: relative;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.friend-container p {
+    margin-left: 26%;
+    margin-right: 270px;
+}
+
+#friend-img {
+    margin-top: -20px;
+    height: 250px;
+    width: auto;
+    float: left;
+}
+
+.sanrio-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 20%;
+}
+
+#sanrio-img1 {
+    display: block;
+    margin-top: 10px;
+    height: 250px;
+    width: auto;
+}
+
+/* education.html */
+#tl-container {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.tl-content {
+    display: flex;
+    align-items: center;
+}
+
+#tl {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 50px auto;
+    line-height: 1.5em;
+    font-size: 1.03em;
+    padding: 10px;
+    list-style: none;
+    text-align: left;
+    font-weight: 100;
+    max-width: 50%;
+    transition: max-width 0.5s ease;
+}
+
+.tl-item {
+    margin-bottom: 50px;
+}
+
+.tl-item:after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px dotted #5a6a8a;
+    margin-top: 10px;
+}
+
+.tl-item:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.tl-item:last-of-type:after {
+    display: none;
+}
+
+.tl-text {
+    flex: 1;
+}
+
+.img-container {
+    text-align: center;
+    color: #7d8eb1;
+}
+
+.img-container img {
+    height: 180px;
+    width: 200px;
+}
+
+/* hobbies.html */
+#grid-items1 {
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: start;
+    align-items: start;
+}
+
+#grid-items2 {
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    justify-content: start;
+    align-items: start;
+}
+
+.grid-items-content iframe {
+    border-radius: 8px;
+    border: 0;
+    width: 90%;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-items-img1 {
+    height: 300px;
+    width: auto;
+}
+
+.grid-items-img2 {
+    height: 250px;
+    width: 250px;
+}
+
+#kpop .grid-items-content p:last-of-type {
+    margin-top: -40px;
+}
+
+.hobbies-img {
+    height: auto;
+    width: 350px;
+}
+
+.hobbies-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gaming-col {
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 25%;
+}
+
+.hobbies-col {
+    flex-direction: column;
+    text-align: center;
+}
+
+.random-margin {
+    margin: 0 100px;
+}
+
+.gaming-img {
+    width: auto;
+    height: 100px;
+}
+
+#random p,
+#gaming>p:first-of-type,
+#anime p {
+    background: #cae6f7;
+    border-radius: 50%;
+    height: auto;
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gaming .hobbies-col p {
+    width: 90%;
+}
+
+/* edu - qualification certificate */
+.edu-qc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edu-qc-items {
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+/* other elements */
+
+.text-align-center {
+    text-align: center;
+}
+
+#line-through {
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+#letter-spacing {
+    letter-spacing: 10px;
+}
+
+li,
+p {
+    font-size: 18px;
+}
+
+.bg-color {
+    background: #bbe6ff;
+}
+
+/* responsive */
+/* desktop >800px */
+@media screen and (min-width: 801px) {
+
+    /* index.html */
+    #index-content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 150px;
+        margin: 150px auto;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .index-img {
+        height: 250px;
+        width: 250px;
+    }
+
+    /* nav */
+    nav li {
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+
+    nav li:last-child a {
+        border: none;
+    }
+
+    nav li:hover li {
+        height: 40px;
+    }
+
+    nav li ul {
+        width: 100%;
+        position: absolute;
+    }
+
+    nav li ul li {
+        width: auto;
+        float: none;
+        border: none;
+        margin-left: -1px;
+    }
+}
+
+/* tablet >540px<=800px */
+@media screen and (min-width: 541px) and (max-width: 800px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        overflow-y: auto;
+    }
+
+    /* index.html */
+    #index-content {
+        margin: 0px auto;
+        padding: 70px;
+    }
+
+    .index-img {
+        height: 225px;
+        width: 225px;
+    }
+
+    /* nav */
+    nav li {
+        margin-bottom: 2px;
+    }
+
+    nav li a {
+        border-bottom: 1px solid #457b9b;
+    }
+
+    nav li a.less,
+    nav li a.more {
+        display: block;
+    }
+
+    nav li ul a {
+        padding-left: 20px;
+    }
+
+    nav li:target ul li {
+        border-top: 1px solid rgb(200, 200, 200);
+    }
+
+    .container {
+        margin-top: 0px;
+    }
+
+    /* education.html */
+    #tl {
+        max-width: 100%;
+    }
+
+    #tl-container {
+        margin-top: -30px;
+    }
+
+    .tl-content h2 {
+        text-align: left;
+    }
+
+    #about-col {
+        flex-basis: 50%;
+    }
+
+    #about {
+        margin-left: 20px;
+    }
+
+    #about h2 {
+        text-align: center;
+    }
+
+    #grid-items {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .family-col,
+    .gaming-col {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .family-img {
+        margin: 0 20px;
+        width: 200px;
+    }
+
+    .friend-container {
+        max-width: 100%;
+    }
+
+    #friend-img {
+        height: 200px;
+    }
+
+    .friend-container p {
+        margin-left: 30%;
+        margin-right: 200px;
+    }
+
+    #sanrio-img1 {
+        height: 200px;
+    }
+
+    /* hobbies.html */
+    #grid-items1 {
+        grid-template-columns: none;
+    }
+
+    .collection-img {
+        width: 300px;
+    }
+
+    .hobbies-img {
+        width: 250px;
+    }
+
+    #random p,
+    #gaming>p:first-of-type,
+    #anime p {
+        width: 400px;
+    }
+}
+
+/* mobile <=540px */
+@media screen and (max-width: 540px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        overflow-y: auto;
+    }
+
+    /* index.html */
+    #index-content {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px;
+        height: 80vh;
+        width: 75%;
+        padding: 50px;
+    }
+
+    .index-img {
+        height: 175px;
+        width: 175px;
+    }
+
+    /* nav */
+    .toggle+a,
+    .menu {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+        background: #8dc5e6;
+        padding: 10px;
+        margin-bottom: 2px;
+        text-decoration: none;
+        border: none;
+        border-bottom: 1px solid #457b9b;
+        color: white;
+    }
+
+    .toggle:hover {
+        background: #6498b6;
+    }
+
+    [id^=drop]:checked+ul {
+        display: block;
+    }
+
+    nav li {
+        margin-bottom: 2px;
+    }
+
+    nav li a {
+        border-bottom: 1px solid #457b9b;
+    }
+
+    nav li a.less,
+    nav li a.more {
+        display: block;
+    }
+
+    nav li ul a {
+        padding-left: 20px
+    }
+
+    nav li:target ul li {
+        border-top: 1px solid rgb(200, 200, 200);
+    }
+
+    .container {
+        margin-top: 0px;
+    }
+
+    /* education.html */
+    #tl {
+        max-width: 100%;
+    }
+
+    .tl-content {
+        flex-direction: column;
+    }
+
+    .tl-content h2 {
+        text-align: center;
+    }
+
+    #tl-container {
+        margin-top: -30px;
+    }
+
+    .tl-item {
+        margin-bottom: 50px;
+    }
+
+    #about-img {
+        height: 250px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-col {
+        flex-basis: 100%;
+    }
+
+    #about h2 {
+        text-align: center;
+    }
+
+    #grid-items {
+        grid-template-columns: none;
+    }
+
+    .family-col,
+    .gaming-col {
+        flex-basis: 100%;
+    }
+
+    .family-img,
+    .gaming-img {
+        margin: 0 100px;
+    }
+
+    .friend-container {
+        max-width: 100%;
+    }
+
+    #friend-img {
+        height: 150px;
+    }
+
+    .friend-container p {
+        margin-left: 0%;
+        margin-right: 110px;
+    }
+
+    #sanrio-img1 {
+        height: 150px;
+    }
+
+    /* hobbies.html */
+    #grid-items1 {
+        grid-template-columns: none;
+    }
+
+    #grid-items2 {
+        grid-template-columns: none;
+    }
+
+    .grid-items-content iframe {
+        height: 150px;
+    }
+
+    .grid-items-img1 {
+        height: 200px;
+    }
+
+    .grid-items-img2 {
+        height: 150px;
+        width: 150px;
+    }
+
+    .collection-img {
+        width: 200px;
+    }
+
+    .hobbies-img {
+        width: 200px;
+    }
+
+    #random p,
+    #gaming>p:first-of-type,
+    #anime p {
+        width: 300px;
+    }
+}

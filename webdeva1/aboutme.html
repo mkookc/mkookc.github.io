@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" >
+</head>
+
+<body>
+    <header>
+        <h1>˖⟡⋆౨ About Me ৎ˚⟡˖</h1>
+    </header>
+    <nav>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul class="menu">
+            <!-- index.html -->
+            <li><a href="index.html">Home</a></li>
+
+            <!-- aboutme.html -->
+            <li id="aboutme">
+                <a title="click to close" class="less" href="#">X</a>
+                <a title="click to open" class="more" href="#aboutme">Z</a>
+                <a href="aboutme.html">About Me</a>
+                <ul>
+                    <!-- aboutme dropdown child -->
+                    <li><a href="aboutme.html#background">Background</a></li>
+                    <li><a href="aboutme.html#aspirations">Aspirations</a></li>
+                    <li><a href="aboutme.html#family">Family</a></li>
+                    <li><a href="aboutme.html#friends">Friends</a></li>
+                </ul>
+            </li>
+
+            <!-- education.html -->
+            <li id="education">
+                <a title="click to close" class="less" href="#">X</a>
+                <a title="click to open" class="more" href="#education">Z</a>
+                <a href="education.html">Education</a>
+                <ul>
+                    <li><a href="education.html#primary">Primary School</a></li>
+                    <li><a href="education.html#secondary">Secondary School</a></li>
+                    <li><a href="education.html#ite">ITE</a></li>
+                    <li><a href="education.html#polytechnic">Polytechnic</a></li>
+                </ul>
+            </li>
+
+            <!-- hobbies.html -->
+            <li id="hobbies">
+                <a title="click to close" class="less" href="#">X</a>
+                <a title="click to open" class="more" href="#hobbies">Z</a>
+                <a href="hobbies.html">Hobbies</a>
+                <ul>
+                    <li><a href = "hobbies.html#kpop">Kpop</a></li>
+                    <li><a href = "hobbies.html#gaming">Games</a></li>
+                    <li><a href = "hobbies.html#pets">Pets</a></li>
+                    <li><a href = "hobbies.html#random">Others</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class = "container">
+        <!-- background -->
+        <section id="background">
+            <div class="flex-container">
+                <img class="img-border" id="about-img" src="images/me.jpg" alt = "me">
+                <div id="about-col">
+                    <div class="text-align-center">
+                        <h4>Hello! My name is:</h4>
+                        <h2 class="introduction-text">Jaslin Joo Chui Hoon</h2>
+                        <h4>and i'm a game programmer</h4>
+                    </div>
+
+                    <div id="about">
+                        <h2>About me</h2>
+                        <ul>
+                            <li>i procrastinate and regrets, alot of times.</li>
+                            <li>i love cute stuffs, you will see me get excited over it.</li>
+                            <li>been stu-dying for the whole of my life.</li>
+                            <li>i'm broke, in need of money.</li>
+                            <li>i need sleep, like alot of it.</li>
+                            <li>fun fact: my name is a combination of both my sister's name</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- aspirations -->
+        <section id="aspirations">
+            <h2 class="text-align-center">Aspirations</h2>
+            <div class="grid-container" id="grid-items">
+                <div class="grid-items-content">
+                    <img class="grid-items-img" src="images/game-developer.png" alt = "gamedev">
+                    <p>to be a game programmer in the future</p>
+                </div>
+                <div class="grid-items-content">
+                    <img class="grid-items-img" src="images/certificate.jpg" alt = "cert">
+                    <p class="text-align-center">graduate with good certificate</p>
+                </div>
+                <div class="grid-items-content">
+                    <img class="grid-items-img" src="images/travel.jpg" alt = "travel">
+                    <p class="text-align-center">travel the world</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- family -->
+        <section id="family">
+            <h2 class="text-align-center">Family</h2>
+            <div class="flex-container" id="flex-start">
+                <!-- mom -->
+                <div class="family-col">
+                    <h3>Mom</h3>
+                    <img class="img-border indiv-img" src="images/mom.jpg" alt = "mom">
+                    <ul>
+                        <li>her famous word "huh"</li>
+                        <li>likes to nag at me</li>
+                        <li>very auntie-like, always like to gossip</li>
+                    </ul>
+                </div>
+                <!-- dad -->
+                <div class="family-col">
+                    <h3>Dad</h3>
+                    <img class="img-border indiv-img" src="images/dad.jpg" alt = "dad">
+                    <ul>
+                        <li>snores very loud</li>
+                        <li>dotes on me</li>
+                        <li>can be annoying sometime</li>
+                        <li>always annoying me when i am doing something</li>
+                    </ul>
+                </div>
+                <!-- eldest sis -->
+                <div class="family-col">
+                    <h3>Eldest Sis</h3>
+                    <img class="img-border indiv-img" src="images/bigsis.jpg" alt = "sis1">
+                    <ul>
+                        <li>can fight 24/7 with her (not physically)</li>
+                        <li>she have 9 years gap with me</li>
+                        <li>she love one piece</li>
+                        <li>have 2 guinea pigs at home also, they very noisy</li>
+                    </ul>
+                </div>
+                <div class="family-col">
+                    <h3>Second Sis</h3>
+                    <img class="img-border indiv-img" src="images/secondsis.jpg" alt = "sis2">
+                    <ul>
+                        <li>studies in IT also</li>
+                        <li>she have 6 years gap with me</li>
+                        <li>very annoying, always ask me to play game with her</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- family photo -->
+            <div class="flex-container justify-content">
+                <div class="family-centered">
+                    <img class="family-img" src="images/fam1.JPG" alt = "fam1">
+                    <img class="family-img" src="images/fam2.JPG" alt = "fam2">
+                    <p class="text-align-center bg-color">overall, best problematic family you can ever have</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- friends -->
+        <section id="friends">
+            <div class="friend-container">
+                <h2 class="text-align-center">Friends</h2>
+                <img class=" img-border" id="friend-img" src="images/amber.jpg" alt = "amber">
+                <h3>Amber</h3>
+                <p>first friend in poly, young infront, auntie at heart.
+                    literally gossips with me 24/7.
+                    have creativity with toilets.
+                    her dad jokes is too much, need to stop.
+                    have same interest for makeup
+                    her fashion is very fashionable!
+                    oh we also have plushies :3
+                    she have lots of love for mymelody.
+
+                </p>
+                <div class="sanrio-container">
+                    <img id="sanrio-img1" src="images/sanrio2.jpg" alt = "sanrio">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
